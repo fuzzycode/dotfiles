@@ -12,6 +12,9 @@
     ~/.dotfiles: '' # Link this repository to the .dotfiles path
     ~/.spacemacs.d: spacemacs.d
     ~/.emacs.d: emacs.d
+    ~/.zshrc: zshrc
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
 
 - shell:
     # Install Homebrew and all applications listed in the brew file
