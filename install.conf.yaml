@@ -8,16 +8,65 @@
 - shell:
     - git submodule update --init --recursive # Installing sub-modules
 
+- tap:
+    - homebrew/core
+    - homebrew/emacs
+    - homebrew/fuse
+    - homebrew/services
+    - homebrew/versions
+    - railwaycat/emacsmacport
+    - caskroom/fonts
+
+- brew:
+    - ack
+    - aspell
+    - bash-completion
+    - cask
+    - sphinx-doc
+    - cmake
+    - ninja
+    - openssl
+    - sqlite
+    - python
+    - clang-format
+    - editorconfig
+    - fasd
+    - flake8
+    - gdb
+    - git-flow
+    - global
+    - hunspell
+    - llvm
+    - markdown
+    - node
+    - python3
+    - rtags
+    - the_silver_searcher
+    - wget
+    - zsh
+    - homebrew/emacs/popup
+    - homebrew/emacs/auto-complete
+    - homebrew/emacs/tern -with-auto-complete
+    - railwaycat/emacsmacport/emacs-mac -with-spacemacs-icon
+
+- cask:
+    - font-inconsolata
+    - font-inconsolata-for-powerline
+    - font-source-code-pro
+
+- shell:
+    # Add hunspell dictionaries
+    - cd ~/Library/Spelling/ && wget http://cgit.freedesktop.org/libreoffice/dictionaries/plain/en/en_GB.aff
+    - cd ~/Library/Spelling/ && wget http://cgit.freedesktop.org/libreoffice/dictionaries/plain/en/en_GB.dic
+
+    - cd ~/Library/Spelling/ && wget http://cgit.freedesktop.org/libreoffice/dictionaries/plain/sv_SE/sv_SE.aff
+    - cd ~/Library/Spelling/ && wget http://cgit.freedesktop.org/libreoffice/dictionaries/plain/sv_SE/sv_SE.dic
+
 - link:
     ~/.dotfiles: '' # Link this repository to the .dotfiles path
     ~/.spacemacs.d: spacemacs.d
     ~/.emacs.d: emacs.d
+    ~/.oh-my-zsh: oh-my-zsh
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
-
-- shell:
-    # Install Homebrew and all applications listed in the brew file
-    - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 2>/dev/null
-    - brew update
-    - brew tap homebrew/bundle && brew bundle --file=Brewfile
