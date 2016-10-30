@@ -70,3 +70,4 @@
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+    ~/.aliases: aliases
