@@ -13,3 +13,6 @@
 [submodule "dotbot-brew"]
 	path = dotbot-brew
 	url = https://github.com/fuzzycode/dotbot-brew.git
+[submodule "iterm/dracula"]
+	path = iterm/dracula
+	url = https://github.com/dracula/iterm.git
