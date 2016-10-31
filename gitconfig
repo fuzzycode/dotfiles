@@ -1,6 +1,6 @@
 [core]
   excludesfile = ~/.gitignore
-	autocrlf = input
+  autocrlf = input
 
 # Allow local customizations in the .gitconfig.local file
 [include]
