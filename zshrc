@@ -91,4 +91,4 @@ source $ZSH/oh-my-zsh.sh
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 # Local config
-[[ -f ~/.zshrc_local ]] && source ~/.zshrc_local
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local

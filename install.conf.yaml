@@ -69,5 +69,5 @@
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
-    ~/.gitignore_global: gitignore_global
+    ~/.gitignore: gitignore
     ~/.aliases: aliases

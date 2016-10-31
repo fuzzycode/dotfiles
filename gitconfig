@@ -1,7 +1,7 @@
 [core]
-  excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore
 	autocrlf = input
 
-# Allow local customizations in the .gitconfig_local file
+# Allow local customizations in the .gitconfig.local file
 [include]
-  path = ~/.gitconfig_local
+  path = ~/.gitconfig.local
