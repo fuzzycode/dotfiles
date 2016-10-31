@@ -36,7 +36,6 @@
     - git-flow
     - global
     - hunspell
-    - llvm
     - markdown
     - node
     - python3
@@ -44,8 +43,7 @@
     - the_silver_searcher
     - wget
     - zsh
-    - homebrew/emacs/popup
-    - homebrew/emacs/auto-complete
+    - homebrew/fuse/sshfs
     - homebrew/emacs/tern -with-auto-complete
     - railwaycat/emacsmacport/emacs-mac -with-spacemacs-icon
 
