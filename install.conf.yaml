@@ -69,3 +69,7 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.aliases: aliases
+
+- shell:
+    - [grep "/usr/local/bin/zsh" /etc/shells ||  echo /usr/local/bin/zsh | sudo tee -a /etc/shells, Installing zsh]
+    - chsh -s /usr/local/bin/zsh
