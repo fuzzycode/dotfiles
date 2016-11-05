@@ -2,6 +2,45 @@
   excludesfile = ~/.gitignore
   autocrlf = input
 
+[alias]
+
+  # Convenience aliases
+  co = checkout
+  st = status -sb
+  br = branch
+
+  # Reset
+  r = reset
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  rh = reset --hard
+  rh1 = reset HEAD^ --hard
+  rh2 = reset HEAD^^ --hard
+
+  # Diff a given revision
+  dr  = "!f() { git diff "$1"^.."$1"; }; f"
+
+  # Find a file
+  f = "!git ls-files | grep -i"
+
+  # Update current branch and all submodules
+  sync = !git pull --rebase --prune $@ && git submodule update --init --recursive
+
+  # Delete all branches that have been merged to the parameter(master) branch
+  bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$"  xargs -r git branch -d; }; f"
+
+  # Move to a new branch (master) and set it up for work
+  bdone = "!f() { git checkout ${1-master} && git sync && git bclean ${1-master}; }; f"
+
+  # Pretty log
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+  # List all aliases
+  la = "!git config -l | grep alias | cut -c 7-"
+
 # Allow local customizations in the .gitconfig.local file
 [include]
   path = ~/.gitconfig.local

@@ -79,3 +79,7 @@
 # Install ycmd server
 - shell:
     - [cd ycmd && ./build.py --clang-completer, Installing ycmd]
+
+# Update the shell
+- shell:
+    - source ~/.zshrc

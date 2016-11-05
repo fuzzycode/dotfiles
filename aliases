@@ -3,5 +3,29 @@
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
+alias g='git '
+alias c='clear'
+alias e='emacs'
+alias ec='emacsclient'
+
+
+# Git aliases
+alias gs='git st'
+alias gb='git br'
+alias gd='git diff'
+alias gp='git pull'
+alias gpr='git pull --rebase'
+alias gf='git fetch'
+
+# System
+findProcess() {
+    ps -e | grep $1 | grep -v grep
+}
+
+alias fp=findProcess
+
+# copy the working directory path
+alias cpwd='pwd|tr -d "\n"|pbcopy'
+
 # Include custom aliases
-[[ -f ~/.aliases_local ]] && source ~/.aliases_local
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
