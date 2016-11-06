@@ -12,7 +12,7 @@
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "dotbot-brew"]
 	path = dotbot-brew
-	url = https://github.com/fuzzycode/dotbot-brew.git
+	url = https://github.com/d12frosted/dotbot-brew.git
 [submodule "iterm/dracula"]
 	path = iterm/dracula
 	url = https://github.com/dracula/iterm.git
