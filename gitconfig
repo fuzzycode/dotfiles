@@ -17,11 +17,15 @@
   rh1 = reset HEAD^ --hard
   rh2 = reset HEAD^^ --hard
 
+  # Submodules
+  su = submodule update --init --recursive
+  subup = "!git pull --recurse-submodules && git submodule update --recursive --remote --init"
+
   # Diff a given revision
   dr  = "!f() { git diff "$1"^.."$1"; }; f"
 
   # Find a file
-  f = "!git ls-files | grep -i"
+  f = "!git ls-files | grep -i "
 
   # Update current branch and all submodules
   sync = !git pull --rebase --prune $@ && git submodule update --init --recursive
