@@ -1,21 +1,28 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+	branch = master
 [submodule "emacs.d"]
 	path = emacs.d
 	url = https://github.com/syl20bnr/spacemacs.git
+	branch = master
 [submodule "spacemacs.d"]
 	path = spacemacs.d
 	url = https://github.com/fuzzycode/dotspacemacs.git
+	branch = master
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+	branch = master
 [submodule "dotbot-brew"]
 	path = dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
+	branch = master
 [submodule "iterm/dracula"]
 	path = iterm/dracula
 	url = https://github.com/dracula/iterm.git
+	branch = master
 [submodule "ycmd"]
 	path = ycmd
 	url = https://github.com/Valloric/ycmd.git
+	branch = master
