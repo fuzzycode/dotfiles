@@ -60,6 +60,9 @@ plugins=(brew git django emacs history osx pip python sudo virtualenvwrapper xco
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Add git scripts to path
+export PATH="~/.dotfiles/git/scripts":$PATH
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
