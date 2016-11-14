@@ -57,23 +57,17 @@ plugins=(brew git django emacs history osx pip python sudo virtualenvwrapper xco
 
 # User configuration
 
-# export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# Add git scripts to path
-export PATH="~/.dotfiles/git/scripts":$PATH
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='emacsclient'
+else
+  export EDITOR='emacsclient'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

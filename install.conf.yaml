@@ -66,6 +66,7 @@
     ~/.emacs.d: emacs.d
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zshrc: zshrc
+    ~/.zshenv: zshenv
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
     ~/.aliases: aliases
