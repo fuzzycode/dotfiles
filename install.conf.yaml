@@ -41,6 +41,7 @@
     - python3
     - rtags
     - the_silver_searcher
+    - ripgrep
     - wget
     - zsh
     - homebrew/fuse/sshfs
