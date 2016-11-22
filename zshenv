@@ -1,2 +1,2 @@
 # Add git scripts to path
-export PATH="~/.dotfiles/git/scripts":$PATH
+export PATH="$HOME/.dotfiles/git/scripts":$PATH
