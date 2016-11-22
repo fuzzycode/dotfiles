@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Use the last commit message and amend your stuffs.
+# Stolen from
+# https://github.com/holman/dotfiles/blob/master/bin/git-amend
+
+git commit --amend -C HEAD
