@@ -33,6 +33,8 @@
     - fasd
     - flake8
     - gdb
+    - git
+    - git-extras
     - git-flow
     - global
     - hunspell
