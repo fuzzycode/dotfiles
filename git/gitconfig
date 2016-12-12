@@ -27,9 +27,6 @@
   # Find a file
   f = "!git ls-files | grep -i "
 
-  # Update current branch and all submodules
-  sync = !git pull --rebase --prune $@ && git submodule update --init --recursive
-
   # Delete all branches that have been merged to the parameter(master) branch
   bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$"  xargs -r git branch -d; }; f"
 
