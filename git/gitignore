@@ -52,6 +52,7 @@ cscope.po.out
 .projectile
 .dir-locals.el
 .dumbjump
+.#*
 
 # JetBrains #
 #############
@@ -64,3 +65,13 @@ cscope.po.out
 # Python #
 ##########
 .pypirc
+
+# Configurarion Files #
+#######################
+.agignore
+.pre-commit-config.yaml
+.clang_complete
+
+# Compile Database #
+####################
+compile_commands.json
