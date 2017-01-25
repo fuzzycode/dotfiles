@@ -8,52 +8,8 @@
 - shell:
     - git submodule update --init --recursive # Installing sub-modules
 
-- tap:
-    - homebrew/core
-    - homebrew/emacs
-    - homebrew/fuse
-    - homebrew/services
-    - homebrew/versions
-    - railwaycat/emacsmacport
-    - caskroom/fonts
-
-- brew:
-    - ack
-    - aspell
-    - bash-completion
-    - cask
-    - sphinx-doc
-    - cmake
-    - ninja
-    - openssl
-    - sqlite
-    - python
-    - clang-format
-    - editorconfig
-    - fasd
-    - flake8
-    - gdb
-    - git
-    - git-extras
-    - git-flow
-    - global
-    - hunspell
-    - markdown
-    - node
-    - python3
-    - rtags
-    - the_silver_searcher
-    - ripgrep
-    - wget
-    - zsh
-    - homebrew/fuse/sshfs
-    - homebrew/emacs/tern -with-auto-complete
-    - railwaycat/emacsmacport/emacs-mac -with-spacemacs-icon
-
-- cask:
-    - font-inconsolata
-    - font-inconsolata-for-powerline
-    - font-source-code-pro
+- shell:
+    -  ./bootstrap.sh
 
 - shell:
     # Add hunspell dictionaries
@@ -74,11 +30,6 @@
     ~/.gitignore: git/gitignore
     ~/.aliases: aliases
     ~/.ycmd: ycmd
-
-# Install zsh as default shell
-- shell:
-    - [grep "/usr/local/bin/zsh" /etc/shells ||  echo /usr/local/bin/zsh | sudo tee -a /etc/shells, Installing zsh]
-    - chsh -s /usr/local/bin/zsh
 
 # Install ycmd server
 - shell:
