@@ -80,6 +80,9 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+# Configure hub to alias as git
+eval "$(hub alias -s)"
+
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
