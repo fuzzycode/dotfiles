@@ -48,6 +48,7 @@ brew install zsh
 brew install homebrew/fuse/sshfs
 brew install homebrew/emacs/tern -with-auto-complete
 brew install railwaycat/emacsmacport/emacs-mac -with-spacemacs-icon
+brew install hub
 
 #Install all casks
 brew cask install font-inconsolata
