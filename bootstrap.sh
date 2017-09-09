@@ -48,6 +48,7 @@ brew install rtags
 brew install sphinx-doc
 brew install sqlite
 brew install the_silver_searcher
+brew install trash
 brew install wget
 brew install zsh
 
