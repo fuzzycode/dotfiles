@@ -1,0 +1,14 @@
+#! /bin/sh
+#
+# Generate tags for all files listed by the git project
+#
+# Original code found at
+# https://csl.name/post/gtags/
+
+set -e
+dir="`git rev-parse --git-dir`"
+trap 'rm -rf "$dir/$$.gtags"' EXIT
+mkdir "$dir/$$.gtags"
+git ls-files | \
+    gtags --file=- --skip-unreadable "$dir/$$.gtags"
+mv $dir/$$.gtags/* "$dir/.."
