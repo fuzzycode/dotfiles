@@ -15,6 +15,7 @@ brew tap homebrew/services
 brew tap homebrew/versions
 brew tap railwaycat/emacsmacport
 brew tap caskroom/fonts
+brew tap universal-ctags/universal-ctags
 
 #Install all packages
 brew install ack
@@ -32,6 +33,7 @@ brew install git-extras
 brew install git-flow
 brew install git-imerge
 brew install global --with-ctags --with-pygments
+brew install --HEAD universal-ctags
 brew install homebrew/emacs/tern -with-auto-complete
 brew install homebrew/fuse/sshfs
 brew install hub
