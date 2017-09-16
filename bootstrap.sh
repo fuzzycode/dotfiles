@@ -31,7 +31,7 @@ brew install git
 brew install git-extras
 brew install git-flow
 brew install git-imerge
-brew install global
+brew install global --with-ctags --with-pygments
 brew install homebrew/emacs/tern -with-auto-complete
 brew install homebrew/fuse/sshfs
 brew install hub
