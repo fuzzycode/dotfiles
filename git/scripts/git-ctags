@@ -10,5 +10,5 @@ dir="`git rev-parse --git-dir`"
 trap 'rm -rf "$dir/$$.gtags"' EXIT
 mkdir "$dir/$$.gtags"
 git ls-files | \
-    gtags --file=- --skip-unreadable "$dir/$$.gtags"
+    gtags --gtagslabel=new-ctags --file=- --skip-unreadable "$dir/$$.gtags"
 mv $dir/$$.gtags/* "$dir/.."
