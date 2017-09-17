@@ -31,6 +31,8 @@
     ~/.aliases: aliases
     ~/.ycmd: ycmd
     ~/.commit-template: git/commit-template
+    ~/.ctags: ctags
+    ~/.globalrc: globalrc
 
 # Install ycmd server
 - shell:
