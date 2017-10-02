@@ -69,6 +69,9 @@ else
   export EDITOR='emacsclient'
 fi
 
+# Use pygments for ctags generation
+export GTAGSLABEL=pygments
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
