@@ -71,6 +71,7 @@ cscope.po.out
 .agignore
 .pre-commit-config.yaml
 .clang_complete
+.ycm_extra_flags
 
 # Compile Database #
 ####################
