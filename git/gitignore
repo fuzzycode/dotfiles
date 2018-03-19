@@ -72,7 +72,14 @@ cscope.po.out
 .pre-commit-config.yaml
 .clang_complete
 .ycm_extra_flags
+.cquery
+.ycm_extra_conf.py
 
 # Compile Database #
 ####################
 compile_commands.json
+
+# Dot Directories  #
+####################
+.vscode
+.cquery_cached_index
