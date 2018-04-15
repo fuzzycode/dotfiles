@@ -13,9 +13,9 @@ brew tap homebrew/emacs
 brew tap homebrew/fuse
 brew tap homebrew/services
 brew tap homebrew/versions
-brew tap railwaycat/emacsmacport
 brew tap caskroom/fonts
 brew tap universal-ctags/universal-ctags
+brew tap d12frosted/emacs-plus
 
 #Install all packages
 brew install ack
@@ -25,6 +25,7 @@ brew install cask
 brew install clang-format
 brew install cmake
 brew install editorconfig
+brew install emacs-plus --with-natural-title-bars
 brew install fasd
 brew install flake8
 brew install gdb
@@ -34,7 +35,6 @@ brew install git-flow
 brew install git-imerge
 brew install --HEAD universal-ctags
 brew install global --with-ctags --with-pygments
-brew install homebrew/emacs/tern -with-auto-complete
 brew install homebrew/fuse/sshfs
 brew install hub
 brew install hunspell
@@ -44,7 +44,6 @@ brew install node
 brew install openssl
 brew install python
 brew install python3
-brew install railwaycat/emacsmacport/emacs-mac -with-spacemacs-icon
 brew install ripgrep
 brew install rtags
 brew install sphinx-doc
@@ -53,6 +52,10 @@ brew install the_silver_searcher
 brew install trash
 brew install wget
 brew install zsh
+brew install tern
+
+# Link apps
+brew linkapps emacs-plus
 
 #Install all casks
 brew cask install font-inconsolata
