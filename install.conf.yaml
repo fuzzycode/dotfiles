@@ -38,13 +38,6 @@
 - shell:
     - [cd ycmd && ./build.py --clang-completer, Installing ycmd]
 
-#Install cquery
-- shell:
-    - cd /tmp/ && git clone https://github.com/cquery-project/cquery.git
-    - cd /tmp/cquery && git submodule update --init --recursive --force
-    # Install using brew installed llvm
-    - cd /tmp/cquery && ./waf configure --llvm-config $(brew --prefix llvm)/bin/llvm-config && ./waf build && ./waf install && rm -r /tmp/cquery
-
 # Update the shell
 - shell:
     - source ~/.zshrc

@@ -53,6 +53,7 @@ brew install trash
 brew install wget
 brew install zsh
 brew install tern
+brew install cquery --HEAD
 
 # Link apps
 brew linkapps emacs-plus
