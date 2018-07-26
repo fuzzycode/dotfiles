@@ -6,7 +6,7 @@ export ZSH=${HOME}/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 if [ -n "$INSIDE_EMACS" ]; then
-    ZSH_THEME="maran"
+    ZSH_THEME="robbyrussell"
 else
     ZSH_THEME="agnoster"
 fi
