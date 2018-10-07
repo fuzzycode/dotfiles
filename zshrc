@@ -5,7 +5,9 @@ export ZSH=${HOME}/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-if [ -n "$INSIDE_EMACS" ]; then
+if [[ ! -o interactive ]]; then
+    ZSH_THEME=""
+elif [ -n "$INSIDE_EMACS" ]; then
     ZSH_THEME="robbyrussell"
 else
     ZSH_THEME="agnoster"
@@ -53,11 +55,13 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew colored-man-pages django emacs extract git history npm osx pip python sudo virtualenv xcode)
 
-# User configuration
-
-source $ZSH/oh-my-zsh.sh
+if [[ -o interactive ]]; then
+    plugins=(autopep8 brew colored-man-pages django emacs extract git history npm osx pip python pyenv sudo virtualenv xcode)
+    source $ZSH/oh-my-zsh.sh
+else
+    plugins=()
+fi
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -87,7 +91,9 @@ export GTAGSLABEL=pygments
 eval "$(hub alias -s)"
 
 # aliases
-[[ -f ~/.aliases ]] && source ~/.aliases
+if [[ -o interactive ]]; then
+    [[ -f ~/.aliases ]] && source ~/.aliases
+fi
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
