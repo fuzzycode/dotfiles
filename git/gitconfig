@@ -4,6 +4,10 @@
 
 [rebase]
 	autoStash = true
+
+[pull]
+	rebase = true
+
 [alias]
 
   # Convenience aliases
