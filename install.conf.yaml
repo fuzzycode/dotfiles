@@ -29,14 +29,9 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
     ~/.aliases: aliases
-    ~/.ycmd: ycmd
     ~/.commit-template: git/commit-template
     ~/.ctags: ctags
     ~/.globalrc: globalrc
-
-# Install ycmd server
-- shell:
-    - [cd ycmd && ./build.py --clang-completer, Installing ycmd]
 
 # Update the shell
 - shell:

@@ -13,6 +13,3 @@
 [submodule "iterm/dracula"]
 	path = iterm/dracula
 	url = https://github.com/dracula/iterm.git
-[submodule "ycmd"]
-	path = ycmd
-	url = https://github.com/Valloric/ycmd.git
