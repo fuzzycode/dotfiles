@@ -2,6 +2,8 @@
   excludesfile = ~/.gitignore
   autocrlf = input
 
+[rebase]
+	autoStash = true
 [alias]
 
   # Convenience aliases
