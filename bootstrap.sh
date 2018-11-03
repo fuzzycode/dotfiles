@@ -56,6 +56,7 @@ brew install tern
 brew install cquery --HEAD
 brew install bat
 brew install fd
+brew install fzf
 
 # Link apps
 brew linkapps emacs-plus
