@@ -8,6 +8,7 @@
 - shell:
     - git submodule update --init --recursive # Installing sub-modules
 
+# Install all brew apps
 - shell:
     -  ./bootstrap.sh
 
@@ -24,14 +25,19 @@
     ~/.spacemacs.d: spacemacs.d
     ~/.emacs.d: emacs.d
     ~/.oh-my-zsh: oh-my-zsh
-    ~/.zshrc: zshrc
-    ~/.zshenv: zshenv
+    ~/.zshrc: zsh/zshrc
+    ~/.zshenv: zsh/zshenv
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
     ~/.aliases: aliases
     ~/.commit-template: git/commit-template
     ~/.ctags: ctags
     ~/.globalrc: globalrc
+    ~/.ripgreprc: ripgreprc
+
+#
+- shell:
+    - $(brew --prefix)/opt/fzf/install
 
 # Update the shell
 - shell:

@@ -95,5 +95,20 @@ if [[ -o interactive ]]; then
     [[ -f ~/.aliases ]] && source ~/.aliases
 fi
 
+#ripgrep
+export RIPGREP_CONFIG_PATH=~/.ripgreprc
+
+# Configure fzf
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# Load extension scripts
+if [[ -o interactive ]]; then
+    fpath=(~/.dotfiles/zsh "${fpath[@]}")
+    autoload -Uz bip bup bcp
+fi
+
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
