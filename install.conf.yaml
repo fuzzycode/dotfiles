@@ -34,7 +34,7 @@
     ~/.ctags: ctags
     ~/.globalrc: globalrc
     ~/.ripgreprc: ripgreprc
-
+    ~/.ignore: ignore
 #
 - shell:
     - $(brew --prefix)/opt/fzf/install
