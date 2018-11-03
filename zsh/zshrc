@@ -102,10 +102,9 @@ export RIPGREP_CONFIG_PATH=~/.ripgreprc
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-# Load extension scripts
+#Plugins
 if [[ -o interactive ]]; then
-    fpath=(~/.dotfiles/zsh "${fpath[@]}")
-    autoload -Uz bip bup bcp
+    source ~/.dotfiles/zsh/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 fi
 
 # Local config
