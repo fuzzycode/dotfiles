@@ -104,7 +104,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 #Plugins
 if [[ -o interactive ]]; then
-    source ~/.dotfiles/zsh/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
     source ~/.dotfiles/zsh/funcs.zsh
 fi
 

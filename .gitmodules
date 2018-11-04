@@ -13,6 +13,3 @@
 [submodule "iterm/dracula"]
 	path = iterm/dracula
 	url = https://github.com/dracula/iterm.git
-[submodule "zsh/zsh-interactive-cd"]
-	path = zsh/zsh-interactive-cd
-	url = https://github.com/changyuheng/zsh-interactive-cd.git
