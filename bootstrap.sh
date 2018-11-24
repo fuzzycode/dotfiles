@@ -45,7 +45,6 @@ brew install openssl
 brew install python
 brew install python3
 brew install ripgrep
-brew install rtags
 brew install sphinx-doc
 brew install sqlite
 brew install the_silver_searcher
