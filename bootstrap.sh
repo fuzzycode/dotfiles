@@ -65,3 +65,9 @@ brew linkapps emacs-plus
 brew cask install font-inconsolata
 brew cask install font-inconsolata-for-powerline
 brew cask install font-source-code-pro
+
+# Quick Look Plugins
+brew cask install qlstephen
+brew cask install qlcolorcode
+brew cask install qlmarkdown
+brew cask install quicklook-json
