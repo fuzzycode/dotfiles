@@ -57,6 +57,8 @@ brew install bat
 brew install fd
 brew install fzf
 brew install terminal-notifier
+brew install tmux
+brew install reattach-to-user-namespace
 
 # Link apps
 brew linkapps emacs-plus

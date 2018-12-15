@@ -35,6 +35,7 @@
     ~/.globalrc: globalrc
     ~/.ripgreprc: ripgreprc
     ~/.ignore: ignore
+    ~/.tmux.conf: tmux.conf
 #
 - shell:
     - $(brew --prefix)/opt/fzf/install
