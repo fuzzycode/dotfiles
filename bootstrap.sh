@@ -21,19 +21,23 @@ brew tap d12frosted/emacs-plus
 brew install ack
 brew install aspell
 brew install bash-completion
+brew install bat
 brew install cask
 brew install clang-format
 brew install cmake
+brew install coreutils
+brew install cquery --HEAD
 brew install editorconfig
 brew install emacs-plus --with-natural-title-bars
 brew install fasd
+brew install fd
 brew install flake8
+brew install fzf
 brew install gdb
 brew install git
 brew install git-extras
 brew install git-flow
 brew install git-imerge
-brew install --HEAD universal-ctags
 brew install global --with-ctags --with-pygments
 brew install homebrew/fuse/sshfs
 brew install hub
@@ -44,21 +48,18 @@ brew install node
 brew install openssl
 brew install python
 brew install python3
+brew install reattach-to-user-namespace
 brew install ripgrep
 brew install sphinx-doc
 brew install sqlite
+brew install terminal-notifier
+brew install tern
 brew install the_silver_searcher
+brew install tmux
 brew install trash
+brew install universal-ctags --HEAD
 brew install wget
 brew install zsh
-brew install tern
-brew install cquery --HEAD
-brew install bat
-brew install fd
-brew install fzf
-brew install terminal-notifier
-brew install tmux
-brew install reattach-to-user-namespace
 
 # Link apps
 brew linkapps emacs-plus
