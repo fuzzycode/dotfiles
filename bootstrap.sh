@@ -26,12 +26,14 @@ brew install cask
 brew install clang-format
 brew install cmake
 brew install coreutils
+brew install cppcheck
 brew install cquery --HEAD
 brew install editorconfig
 brew install emacs-plus --with-natural-title-bars
 brew install fasd
 brew install fd
 brew install flake8
+brew install flawfinder
 brew install fzf
 brew install gdb
 brew install git
@@ -40,14 +42,18 @@ brew install git-flow
 brew install git-imerge
 brew install global --with-ctags --with-pygments
 brew install homebrew/fuse/sshfs
+brew install htop
 brew install hub
 brew install hunspell
 brew install markdown
+brew install mu --with-emacs
 brew install ninja
 brew install node
 brew install openssl
+brew install pandoc
 brew install python
 brew install python3
+brew install rats
 brew install reattach-to-user-namespace
 brew install ripgrep
 brew install sphinx-doc
