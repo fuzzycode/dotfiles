@@ -1,0 +1,13 @@
+#+TITLE: Project Notes
+#+AUTHOR: Björn Larsson
+
+* TODO Configure org-super-agenda
+  :PROPERTIES:
+  :CREATED: [2019-02-05 Tue 20:16]
+  :END:
+  [[https://github.com/alphapapa/org-super-agenda][org-super-agenda]]
+* TODO Configure org-fancy-priorities
+  :PROPERTIES:
+  :CREATED: [2019-02-05 Tue 20:19]
+  :END:
+  [[https://github.com/harrybournis/org-fancy-priorities][org-fancy-priorities]]
