@@ -55,6 +55,8 @@ brew install pandoc
 brew install plantuml
 brew install python
 brew install python3
+brew install pyenv
+brew install pyenv-virtualenv
 brew install rats
 brew install reattach-to-user-namespace
 brew install ripgrep
