@@ -51,6 +51,7 @@ brew install ninja
 brew install node
 brew install openssl
 brew install pandoc
+brew install plantuml
 brew install python
 brew install python3
 brew install rats
