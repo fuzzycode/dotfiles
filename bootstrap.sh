@@ -41,6 +41,7 @@ brew install git-extras
 brew install git-flow
 brew install git-imerge
 brew install global --with-ctags --with-pygments
+brew install graphviz
 brew install homebrew/fuse/sshfs
 brew install htop
 brew install hub
