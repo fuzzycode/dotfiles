@@ -9,12 +9,8 @@ brew update
 
 # Add all taps
 brew tap homebrew/core
-brew tap homebrew/emacs
-brew tap homebrew/fuse
 brew tap homebrew/services
-brew tap homebrew/versions
 brew tap caskroom/fonts
-brew tap universal-ctags/universal-ctags
 brew tap d12frosted/emacs-plus
 
 #Install all packages
@@ -35,14 +31,11 @@ brew install fd
 brew install flake8
 brew install flawfinder
 brew install fzf
-brew install gdb
 brew install git
 brew install git-extras
 brew install git-flow
 brew install git-imerge
-brew install global --with-ctags --with-pygments
 brew install graphviz
-brew install homebrew/fuse/sshfs
 brew install htop
 brew install hub
 brew install hunspell
@@ -53,7 +46,6 @@ brew install node
 brew install openssl
 brew install pandoc
 brew install plantuml
-brew install python
 brew install python3
 brew install pyenv
 brew install pyenv-virtualenv
@@ -67,7 +59,6 @@ brew install tern
 brew install the_silver_searcher
 brew install tmux
 brew install trash
-brew install universal-ctags --HEAD
 brew install wget
 brew install zsh
 
