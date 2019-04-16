@@ -105,9 +105,9 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #Plugins
 if [[ -o interactive ]]; then
     source ~/.dotfiles/zsh/funcs.zsh
+    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+fi
 fi
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
