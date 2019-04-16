@@ -107,6 +107,11 @@ if [[ -o interactive ]]; then
     source ~/.dotfiles/zsh/funcs.zsh
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi
+
+# Setup pyenv
+eval "$(pyenv init -)"
+if which pyenv-virtualenv-init > /dev/null; then
+    eval "$(pyenv virtualenv-init -)";
 fi
 
 # Local config
