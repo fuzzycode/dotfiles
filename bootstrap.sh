@@ -19,13 +19,13 @@ brew install aspell
 brew install bash-completion
 brew install bat
 brew install cask
+brew install ccls --HEAD
 brew install clang-format
 brew install cmake
 brew install coreutils
 brew install cppcheck
-brew install cquery --HEAD
 brew install editorconfig
-brew install emacs-plus --with-natural-title-bars
+brew install emacs-plus
 brew install fasd
 brew install fd
 brew install flake8
@@ -38,7 +38,6 @@ brew install git-imerge
 brew install graphviz
 brew install htop
 brew install hub
-brew install hunspell
 brew install markdown
 brew install mu --with-emacs
 brew install ninja
@@ -61,9 +60,6 @@ brew install tmux
 brew install trash
 brew install wget
 brew install zsh
-
-# Link apps
-brew linkapps emacs-plus
 
 #Install all casks
 brew cask install font-inconsolata
