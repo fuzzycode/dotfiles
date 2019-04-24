@@ -31,6 +31,8 @@
 #
 - shell:
     - $(brew --prefix)/opt/fzf/install
+    # Set zsh as default shell
+    - chsh -s /bin/zsh
 
 # Update the shell
 - shell:
