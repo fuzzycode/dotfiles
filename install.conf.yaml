@@ -12,14 +12,6 @@
 - shell:
     -  ./bootstrap.sh
 
-- shell:
-    # Add hunspell dictionaries
-    - cd ~/Library/Spelling/ && wget http://cgit.freedesktop.org/libreoffice/dictionaries/plain/en/en_GB.aff
-    - cd ~/Library/Spelling/ && wget http://cgit.freedesktop.org/libreoffice/dictionaries/plain/en/en_GB.dic
-
-    - cd ~/Library/Spelling/ && wget http://cgit.freedesktop.org/libreoffice/dictionaries/plain/sv_SE/sv_SE.aff
-    - cd ~/Library/Spelling/ && wget http://cgit.freedesktop.org/libreoffice/dictionaries/plain/sv_SE/sv_SE.dic
-
 - link:
     ~/.dotfiles: '' # Link this repository to the .dotfiles path
     ~/.spacemacs.d: spacemacs.d
