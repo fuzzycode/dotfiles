@@ -1,15 +1,20 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+	branch = master
 [submodule "emacs.d"]
 	path = emacs.d
 	url = https://github.com/syl20bnr/spacemacs.git
+	branch = develop
 [submodule "spacemacs.d"]
 	path = spacemacs.d
 	url = https://github.com/fuzzycode/dotspacemacs.git
+	branch = master
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+	branch = master
 [submodule "iterm/dracula"]
 	path = iterm/dracula
 	url = https://github.com/dracula/iterm.git
+	branch = master
