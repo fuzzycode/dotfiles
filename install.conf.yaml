@@ -15,6 +15,7 @@
 - link:
     ~/.dotfiles: '' # Link this repository to the .dotfiles path
     ~/.spacemacs.d: spacemacs.d
+    ~/.doom.d: doom.d
     ~/.emacs.d: emacs.d
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zshrc: zsh/zshrc
