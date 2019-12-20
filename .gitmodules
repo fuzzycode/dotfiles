@@ -18,3 +18,6 @@
 	path = iterm/dracula
 	url = https://github.com/dracula/iterm.git
 	branch = master
+[submodule "doom.d"]
+	path = doom.d
+	url = git@github.com:fuzzycode/doom.d.git
