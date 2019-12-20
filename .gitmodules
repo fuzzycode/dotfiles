@@ -21,3 +21,6 @@
 [submodule "doom.d"]
 	path = doom.d
 	url = https://github.com/fuzzycode/doom.d.git
+[submodule "doom-emacs"]
+	path = doom-emacs
+	url = https://github.com/hlissner/doom-emacs.git
