@@ -20,4 +20,4 @@
 	branch = master
 [submodule "doom.d"]
 	path = doom.d
-	url = git@github.com:fuzzycode/doom.d.git
+	url = https://github.com/fuzzycode/doom.d.git
