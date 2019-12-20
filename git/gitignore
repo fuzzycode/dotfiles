@@ -83,3 +83,9 @@ compile_commands.json
 ####################
 .vscode
 .cquery_cached_index
+
+# lsp Directories  #
+####################
+*.lsp-cache/**
+*.ccls-cache/**
+*.clangd/**
