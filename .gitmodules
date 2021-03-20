@@ -2,14 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	branch = master
-[submodule "emacs.d"]
-	path = emacs.d
-	url = https://github.com/syl20bnr/spacemacs.git
-	branch = develop
-[submodule "spacemacs.d"]
-	path = spacemacs.d
-	url = https://github.com/fuzzycode/dotspacemacs.git
-	branch = master
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
@@ -21,6 +13,3 @@
 [submodule "doom.d"]
 	path = doom.d
 	url = https://github.com/fuzzycode/doom.d.git
-[submodule "doom-emacs"]
-	path = doom-emacs
-	url = https://github.com/hlissner/doom-emacs.git
