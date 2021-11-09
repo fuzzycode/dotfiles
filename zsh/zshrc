@@ -57,7 +57,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 
 if [[ -o interactive ]]; then
-    plugins=(autopep8 brew emacs extract git history npm osx pip python pyenv sudo virtualenv)
+    plugins=(autopep8 brew emacs extract git history npm macos pip python pyenv sudo virtualenv)
     source $ZSH/oh-my-zsh.sh
 else
     plugins=()
