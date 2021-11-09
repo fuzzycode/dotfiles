@@ -18,6 +18,7 @@
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zshrc: zsh/zshrc
     ~/.zshenv: zsh/zshenv
+    ~/.zprofile: zsh/zprofile
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
     ~/.aliases: aliases
