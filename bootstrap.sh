@@ -22,7 +22,7 @@ brew install cmake
 brew install coreutils
 brew install cppcheck
 brew install editorconfig
-brew install emacs-plus
+brew install enchant
 brew install fasd
 brew install fd
 brew install flake8
@@ -36,25 +36,23 @@ brew install graphviz
 brew install htop
 brew install hub
 brew install llvm
+brew install mailutils
 brew install markdown
 brew install mu --with-emacs
 brew install ninja
 brew install node
-brew install openssl
 brew install pandoc
 brew install plantuml
 brew install python3
 brew install pyenv
 brew install pyenv-virtualenv
-brew install rats
-brew install reattach-to-user-namespace
 brew install ripgrep
 brew install sphinx-doc
 brew install sqlite
 brew install terminal-notifier
 brew install tern
-brew install tmux
 brew install trash
+brew intsall tree
 brew install wget
 brew install zsh
 
