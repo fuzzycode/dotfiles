@@ -8,8 +8,6 @@ fi
 brew update
 
 # Add all taps
-brew tap homebrew/core
-brew tap homebrew/services
 brew tap caskroom/fonts
 brew tap d12frosted/emacs-plus
 
@@ -19,7 +17,6 @@ brew install aspell
 brew install bash-completion
 brew install bat
 brew install cask
-brew install ccls --HEAD
 brew install clang-format
 brew install cmake
 brew install coreutils
@@ -38,6 +35,7 @@ brew install git-imerge
 brew install graphviz
 brew install htop
 brew install hub
+brew install llvm
 brew install markdown
 brew install mu --with-emacs
 brew install ninja
@@ -55,7 +53,6 @@ brew install sphinx-doc
 brew install sqlite
 brew install terminal-notifier
 brew install tern
-brew install the_silver_searcher
 brew install tmux
 brew install trash
 brew install wget
@@ -65,9 +62,3 @@ brew install zsh
 brew cask install font-inconsolata
 brew cask install font-inconsolata-for-powerline
 brew cask install font-source-code-pro
-
-# Quick Look Plugins
-brew cask install qlstephen
-brew cask install qlcolorcode
-brew cask install qlmarkdown
-brew cask install quicklook-json
