@@ -13,10 +13,8 @@ brew tap d12frosted/emacs-plus
 
 #Install all packages
 brew install ack
-brew install aspell
 brew install bash-completion
 brew install bat
-brew install cask
 brew install clang-format
 brew install cmake
 brew install coreutils
@@ -26,7 +24,6 @@ brew install enchant
 brew install fasd
 brew install fd
 brew install flake8
-brew install flawfinder
 brew install fzf
 brew install git
 brew install git-extras
@@ -43,14 +40,10 @@ brew install ninja
 brew install node
 brew install pandoc
 brew install plantuml
-brew install python3
-brew install pyenv
-brew install pyenv-virtualenv
 brew install ripgrep
 brew install sphinx-doc
 brew install sqlite
 brew install terminal-notifier
-brew install tern
 brew install trash
 brew intsall tree
 brew install wget
