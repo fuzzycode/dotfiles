@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-if ! command -v brew >/dev/null 2>&1; then
-    echo "Installing Homebrew"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
-
 brew update
 
 # Add all taps
