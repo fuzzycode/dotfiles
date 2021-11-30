@@ -3,7 +3,7 @@
 brew update
 
 # Add all taps
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew tap d12frosted/emacs-plus
 
 #Install all packages
@@ -45,6 +45,8 @@ brew install wget
 brew install zsh
 
 #Install all casks
-brew cask install font-inconsolata
-brew cask install font-inconsolata-for-powerline
-brew cask install font-source-code-pro
+brew install --cask font-ibm-plex
+brew install --cask font-juliamono
+brew install --cask font-overpass
+brew install --cask font-jetbrains-mono
+brew install --cask font-inconsolata
