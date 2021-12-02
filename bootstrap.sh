@@ -20,14 +20,18 @@ brew install fasd
 brew install fd
 brew install flake8
 brew install fzf
+brew install direnv
 brew install git
 brew install git-extras
 brew install git-flow
 brew install git-imerge
+brew install gnuplot
 brew install graphviz
 brew install htop
 brew install hub
+brew install isync
 brew install llvm
+brew install libvterm
 brew install mailutils
 brew install markdown
 brew install mu --with-emacs
@@ -35,7 +39,10 @@ brew install ninja
 brew install node
 brew install pandoc
 brew install plantuml
+brew install pngpaste
 brew install ripgrep
+brew install rust-analyzer
+brew install shellcheck
 brew install sphinx-doc
 brew install sqlite
 brew install terminal-notifier
