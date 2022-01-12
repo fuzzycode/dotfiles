@@ -76,6 +76,10 @@ fi
 # Use pygments for ctags generation
 export GTAGSLABEL=pygments
 
+# Homebrew
+# Silence the help messages from homebrew
+export HOMEBREW_NO_ENV_HINTS=1
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
