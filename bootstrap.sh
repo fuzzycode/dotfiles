@@ -40,12 +40,14 @@ brew install node
 brew install pandoc
 brew install plantuml
 brew install pngpaste
+brew install pre-commit
 brew install ripgrep
 brew install rust-analyzer
 brew install shellcheck
 brew install sphinx-doc
 brew install sqlite
 brew install terminal-notifier
+brew install texlab
 brew install trash
 brew intsall tree
 brew install wget
