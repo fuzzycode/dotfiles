@@ -6,10 +6,6 @@
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 	branch = master
-[submodule "iterm/dracula"]
-	path = iterm/dracula
-	url = https://github.com/dracula/iterm.git
-	branch = master
 [submodule "doom.d"]
 	path = doom.d
 	url = ../doom.d.git
