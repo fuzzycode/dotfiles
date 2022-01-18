@@ -59,7 +59,7 @@ HIST_STAMPS="yyyy-mm-dd"
 if [[ -o interactive ]]; then
 
    # Base plugins
-    plugins=(emacs extract git history npm pip python pyenv sudo virtualenv)
+    plugins=(emacs extract fd fzf git history npm pip python pyenv ripgrep sudo virtualenv)
 
     if [ "$(uname -s)"=="Darwin" ]
     then
