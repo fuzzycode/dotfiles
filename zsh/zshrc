@@ -57,7 +57,19 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 
 if [[ -o interactive ]]; then
-    plugins=(autopep8 brew emacs extract git history npm macos pip python pyenv sudo virtualenv)
+
+   # Base plugins
+    plugins=(emacs extract git history npm pip python pyenv sudo virtualenv)
+
+    if [ "$(uname -s)"=="Darwin" ]
+    then
+        # OSX Specific plugins
+        plugins+=(brew macos)
+
+        # Silence the help messages from homebrew
+        export HOMEBREW_NO_ENV_HINTS=1
+    fi
+
     source $ZSH/oh-my-zsh.sh
 else
     plugins=()
@@ -75,10 +87,6 @@ fi
 
 # Use pygments for ctags generation
 export GTAGSLABEL=pygments
-
-# Homebrew
-# Silence the help messages from homebrew
-export HOMEBREW_NO_ENV_HINTS=1
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

@@ -15,7 +15,9 @@
 - link:
     ~/.dotfiles: '' # Link this repository to the .dotfiles path
     ~/.doom.d: doom.d
-    ~/.oh-my-zsh: oh-my-zsh
+    ~/.oh-my-zsh:
+      if: '[ `uname` = Darwin ]'
+      path: oh-my-zsh
     ~/.zshrc: zsh/zshrc
     ~/.zshenv: zsh/zshenv
     ~/.zprofile: zsh/zprofile
@@ -30,7 +32,6 @@
     ~/.tmux.conf: tmux.conf
 #
 - shell:
-    - $(brew --prefix)/opt/fzf/install
     # Set zsh as default shell
     - chsh -s /bin/zsh
 

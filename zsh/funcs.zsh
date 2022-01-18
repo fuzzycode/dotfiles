@@ -1,36 +1,42 @@
-# Install (one or multiple) selected application(s)
-# using "brew search" as source input
-# mnemonic [B]rew [I]nstall [P]lugin
-bip() {
-    local inst=$(brew search | fzf -m --header='[brew:install]')
 
-    if [[ $inst ]]; then
-        for prog in $(echo $inst);
-        do; brew install $prog; done;
-    fi
-}
+# Brew specific functionality
+if [ "$(uname -s)"=="Darwin" ]
+then
+    # Install (one or multiple) selected application(s)
+    # using "brew search" as source input
+    # mnemonic [B]rew [I]nstall [P]lugin
+    bip() {
+        local inst=$(brew search | fzf -m --header='[brew:install]')
 
-# Update (one or multiple) selected application(s)
-# mnemonic [B]rew [U]pdate [P]lugin
-bup() {
-    local upd=$(brew outdated | fzf -m --header='[brew:update]')
+        if [[ $inst ]]; then
+            for prog in $(echo $inst);
+            do; brew install $prog; done;
+        fi
+    }
 
-    if [[ $upd ]]; then
-        for prog in $(echo $upd);
-        do; brew upgrade $prog; done;
-    fi
-}
+    # Update (one or multiple) selected application(s)
+    # mnemonic [B]rew [U]pdate [P]lugin
+    bup() {
+        local upd=$(brew outdated | fzf -m --header='[brew:update]')
 
-# Delete (one or multiple) selected application(s)
-# mnemonic [B]rew [C]lean [P]lugin (e.g. uninstall)
-bcp() {
-    local uninst=$(brew leaves | fzf -m --header='[brew:uninstall]')
+        if [[ $upd ]]; then
+            for prog in $(echo $upd);
+            do; brew upgrade $prog; done;
+        fi
+    }
 
-    if [[ $uninst ]]; then
-        for prog in $(echo $uninst);
-        do; brew uninstall $prog; done;
-    fi
-}
+    # Delete (one or multiple) selected application(s)
+    # mnemonic [B]rew [C]lean [P]lugin (e.g. uninstall)
+    bcp() {
+        local uninst=$(brew leaves | fzf -m --header='[brew:uninstall]')
+
+        if [[ $uninst ]]; then
+            for prog in $(echo $uninst);
+            do; brew uninstall $prog; done;
+        fi
+    }
+
+fi
 
 # cc - cd into child directory
 cc() {
