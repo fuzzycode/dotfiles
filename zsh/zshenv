@@ -1,8 +1,7 @@
 # Add git scripts to path
 export PATH="$HOME/.dotfiles/git/scripts":$PATH
 
-if [ "$(uname -s)"=="Darwin" ]
-then
+if [[ "$(uname -s)" == "Darwin" ]]; then
     # Add brew bin directory to path
     export PATH="/usr/local/bin/":$PATH
     export PATH="/usr/local/sbin":$PATH

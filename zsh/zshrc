@@ -61,8 +61,7 @@ if [[ -o interactive ]]; then
    # Base plugins
     plugins=(emacs extract fd fzf git history npm pip python pyenv ripgrep sudo virtualenv)
 
-    if [ "$(uname -s)"=="Darwin" ]
-    then
+    if [[ "$(uname -s)" == "Darwin" ]]; then
         # OSX Specific plugins
         plugins+=(brew macos)
 

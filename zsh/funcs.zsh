@@ -1,7 +1,6 @@
 
 # Brew specific functionality
-if [ "$(uname -s)"=="Darwin" ]
-then
+if [[ "$(uname -s)"=="Darwin" ]]; then
     # Install (one or multiple) selected application(s)
     # using "brew search" as source input
     # mnemonic [B]rew [I]nstall [P]lugin

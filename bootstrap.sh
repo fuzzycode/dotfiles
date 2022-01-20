@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Only run if running on osx where we have homebrew
-if [ "$(uname)" == "Darwin" ]; then
+if [[ "$(uname)" == "Darwin" ]]; then
     brew update
 
     # Add all taps
