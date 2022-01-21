@@ -59,11 +59,11 @@ HIST_STAMPS="yyyy-mm-dd"
 if [[ -o interactive ]]; then
 
    # Base plugins
-    plugins=(emacs extract fd fzf git history npm pip python pyenv ripgrep sudo virtualenv)
+    plugins=(emacs extract fd git history npm pip python pyenv ripgrep sudo virtualenv)
 
     if [[ "$(uname -s)" == "Darwin" ]]; then
         # OSX Specific plugins
-        plugins+=(brew macos)
+        plugins+=(brew fzf macos)
 
         # Silence the help messages from homebrew
         export HOMEBREW_NO_ENV_HINTS=1
