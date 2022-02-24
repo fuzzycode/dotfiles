@@ -12,6 +12,9 @@
 - shell:
     -  ./bootstrap.sh
 
+- shell:
+  - mkdir -p ~/.config
+
 - link:
     ~/.dotfiles: '' # Link this repository to the .dotfiles path
     ~/.doom.d: doom.d
@@ -30,6 +33,7 @@
     ~/.ripgreprc: ripgreprc
     ~/.ignore: ignore
     ~/.tmux.conf: tmux.conf
+    ~/.config/starship.toml: starship.toml
 #
 - shell:
     # Set zsh as default shell
