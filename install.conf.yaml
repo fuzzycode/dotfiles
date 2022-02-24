@@ -18,12 +18,10 @@
 - link:
     ~/.dotfiles: '' # Link this repository to the .dotfiles path
     ~/.doom.d: doom.d
-    ~/.oh-my-zsh:
-      if: '[ `uname` = Darwin ]'
-      path: oh-my-zsh
     ~/.zshrc: zsh/zshrc
     ~/.zshenv: zsh/zshenv
     ~/.zprofile: zsh/zprofile
+    ~/.zsh_plugins.txt: zsh/zsh_plugins.txt # antibody configuration file
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
     ~/.aliases: aliases

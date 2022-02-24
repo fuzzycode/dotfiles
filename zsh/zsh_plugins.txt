@@ -1,0 +1,12 @@
+# Add oh-my-zsh functionality
+ohmyzsh/ohmyzsh
+ohmyzsh/ohmyzsh path:plugins/fd
+ohmyzsh/ohmyzsh path:plugins/ripgrep
+ohmyzsh/ohmyzsh path:plugins/copybuffer
+ohmyzsh/ohmyzsh path:plugins/dirhistory
+
+
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
+
+davidde/git
