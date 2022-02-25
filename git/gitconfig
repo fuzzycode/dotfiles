@@ -3,10 +3,10 @@
   autocrlf = input
 
 [rebase]
-	autoStash = true
+  autoStash = true
 
 [pull]
-	rebase = true
+  rebase = true
 
 [alias]
 
