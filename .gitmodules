@@ -2,10 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	branch = master
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
-	branch = master
 [submodule "doom.d"]
 	path = doom.d
 	url = ../doom.d.git
