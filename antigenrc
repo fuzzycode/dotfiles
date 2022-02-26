@@ -1,0 +1,16 @@
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+antigen bundle fd
+antigen bundle ripgrep
+antigen bundle copybuffer
+antigen bundle dirhistory
+antigen bundle unixorn/fzf-zsh-plugin@main
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+
+antigen bundle davidde/git
+
+# Has to be the last thing
+antigen apply

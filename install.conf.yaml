@@ -12,16 +12,12 @@
 - shell:
     -  ./bootstrap.sh
 
-- shell:
-  - mkdir -p ~/.config
-
 - link:
     ~/.dotfiles: '' # Link this repository to the .dotfiles path
     ~/.doom.d: doom.d
     ~/.zshrc: zsh/zshrc
     ~/.zshenv: zsh/zshenv
     ~/.zprofile: zsh/zprofile
-    ~/.zsh_plugins.txt: zsh/zsh_plugins.txt # antibody configuration file
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
     ~/.aliases: aliases
@@ -32,6 +28,8 @@
     ~/.ignore: ignore
     ~/.tmux.conf: tmux.conf
     ~/.config/starship.toml: starship.toml
+    ~/.antigen: antigen
+    ~/.antigenrc: antigenrc
 #
 - shell:
     # Set zsh as default shell

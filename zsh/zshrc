@@ -1,8 +1,14 @@
 
 if [[ -o interactive ]]; then
-    source <(antibody init)
-    antibody bundle < ~/.zsh_plugins.txt
-    ZSH=$(antibody path ohmyzsh/ohmyzsh)
+    # Setup Antigen
+    source ~/.antigen/antigen.zsh
+    antigen init ~/.antigenrc
+
+    # Configure aliases
+    source ~/.aliases
+
+    # Setup starship prompt
+    eval "$(starship init zsh)"
 fi
 
 # You may need to manually set your language environment
@@ -17,13 +23,6 @@ fi
 
 #ripgrep
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
-
-
-#Plugins
-if [[ -o interactive ]]; then
-    source ~/.dotfiles/zsh/funcs.zsh
-    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-fi
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
