@@ -1,6 +1,16 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
+  pager = delta "delta --dark -s"
+
+[interactive]
+    diffFilter = delta --diff-so-fancy --features=interactive
+
+[delta]
+    features = decorations
+
+[delta "interactive"]
+    keep-plus-minus-markers = false
 
 [rebase]
   autoStash = true
