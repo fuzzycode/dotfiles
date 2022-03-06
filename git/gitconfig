@@ -18,6 +18,9 @@
 [pull]
   rebase = true
 
+[fetch]
+  prune = true
+
 [alias]
 
   # Convenience aliases
@@ -42,12 +45,6 @@
 
   # Find a file
   f = "!git ls-files | grep -i "
-
-  # Delete all branches that have been merged to the parameter(master) branch
-  bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$"  xargs -r git branch -d; }; f"
-
-  # Move to a new branch (master) and set it up for work
-  bdone = "!f() { git checkout ${1-master} && git sync && git bclean ${1-master}; }; f"
 
   # Pretty log
   ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative

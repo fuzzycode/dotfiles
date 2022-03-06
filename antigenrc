@@ -1,6 +1,7 @@
 # Load oh-my-zsh library
 antigen use oh-my-zsh
 
+# oh-my-zsh plugins
 antigen bundle fd
 antigen bundle ripgrep
 antigen bundle copybuffer
@@ -16,6 +17,7 @@ antigen bundle fasd
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 
+antigen bundle EthanLeisinger/zsh-git-scripts
 antigen bundle wookayin/fzf-fasd
 antigen bundle davidde/git
 
