@@ -6,17 +6,18 @@ antigen bundle fd
 antigen bundle ripgrep
 antigen bundle copybuffer
 antigen bundle dirhistory
-antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle agkozak/zsh-z
 antigen bundle common-aliases
 antigen bundle zsh-interactive-cd
 antigen bundle aliases
 antigen bundle colored-man-pages
 antigen bundle fasd
+antigen bundle ssh-agent
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 
+antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle EthanLeisinger/zsh-git-scripts
 antigen bundle wookayin/fzf-fasd
 antigen bundle davidde/git
