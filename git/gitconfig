@@ -1,7 +1,7 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
-  pager = delta "delta --dark -s"
+  pager = "delta --dark -s"
 
 [interactive]
     diffFilter = delta --diff-so-fancy --features=interactive
