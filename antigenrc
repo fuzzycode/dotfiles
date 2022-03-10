@@ -12,7 +12,8 @@ antigen bundle zsh-interactive-cd
 antigen bundle aliases
 antigen bundle colored-man-pages
 antigen bundle fasd
-antigen bundle ssh-agent
+antigen bundle emacs
+antigen bundle gitfast
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
@@ -21,6 +22,17 @@ antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle EthanLeisinger/zsh-git-scripts
 antigen bundle wookayin/fzf-fasd
 antigen bundle davidde/git
+
+
+case "$(uname -s)" in
+     Darwin)
+        antigen bundle brew
+     ;;
+     CYGWIN*|MINGW32*|MSYS*|MINGW*)
+        antigen bundle ssh-agent
+     ;;
+esac
+
 
 # Has to be the last thing
 antigen apply
