@@ -8,6 +8,9 @@ $line_break\
 $python\
 $character"""
 
+# Bump default timeout since git is slooow on windows
+command_timeout = 1000
+
 [directory]
 style = "blue"
 truncation_symbol = "../"
