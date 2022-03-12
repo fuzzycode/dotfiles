@@ -1,6 +1,5 @@
 [core]
   excludesfile = ~/.gitignore
-  autocrlf = input
   pager = "delta --dark -s"
 
 [interactive]
@@ -22,7 +21,6 @@
   prune = true
 
 [alias]
-
   # Convenience aliases
   co = checkout
   st = status -sb
