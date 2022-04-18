@@ -1,15 +1,18 @@
 [core]
   excludesfile = ~/.gitignore
-  pager = "delta --dark -s"
 
-[interactive]
-    diffFilter = delta --diff-so-fancy --features=interactive
+[diff]
+        tool = difftastic
+        external = difft
 
-[delta]
-    features = decorations
+[difftool]
+        prompt = false
 
-[delta "interactive"]
-    keep-plus-minus-markers = false
+[difftool "difftastic"]
+        cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+        difftool = true
 
 [rebase]
   autoStash = true
@@ -49,6 +52,8 @@
   ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
   lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+  dft = difftool
 
   # http://brettterpstra.com/2014/08/04/shell-tricks-one-git-alias-to-rule-them-all/
   # Allow searching for and listing git aliases
