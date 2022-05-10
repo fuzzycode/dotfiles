@@ -3,7 +3,6 @@
 
 [diff]
   tool = difftastic
-  external = difft
 
 [difftool]
   prompt = false
