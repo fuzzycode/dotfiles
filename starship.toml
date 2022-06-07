@@ -14,7 +14,7 @@ command_timeout = 1000
 [directory]
 style = "blue"
 truncation_symbol = "../"
-truncate_to_repo = "true"
+truncate_to_repo = true
 
 [character]
 success_symbol = "[❯](purple)"
