@@ -18,6 +18,9 @@ antigen bundle gitfast
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 
+antigen bundle lukechilds/zsh-nvm
+
+
 antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle EthanLeisinger/zsh-git-scripts
 antigen bundle wookayin/fzf-fasd
