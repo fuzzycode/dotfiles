@@ -20,12 +20,11 @@ antigen bundle zsh-users/zsh-autosuggestions
 
 antigen bundle lukechilds/zsh-nvm
 
-
-antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle EthanLeisinger/zsh-git-scripts
 antigen bundle wookayin/fzf-fasd
 antigen bundle davidde/git
 
+antigen bundle fuzzycode/homebrew-fzf-utils@main
 
 case "$(uname -s)" in
      Darwin)
