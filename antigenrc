@@ -14,6 +14,7 @@ antigen bundle colored-man-pages
 antigen bundle fasd
 antigen bundle emacs
 antigen bundle gitfast
+antigen bundle joshskidmore/zsh-fzf-history-search
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
