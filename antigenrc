@@ -25,10 +25,9 @@ antigen bundle EthanLeisinger/zsh-git-scripts
 antigen bundle wookayin/fzf-fasd
 antigen bundle davidde/git
 
-antigen bundle fuzzycode/homebrew-fzf-utils@main
-
 case "$(uname -s)" in
      Darwin)
+        antigen bundle fuzzycode/homebrew-fzf-utils@main
         antigen bundle brew
      ;;
      CYGWIN*|MINGW32*|MSYS*|MINGW*)
