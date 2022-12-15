@@ -45,6 +45,12 @@ export FZF_DEFAULT_OPTS="
 --bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
 "
 
+# FZF History
+export ZSH_FZF_HISTORY_SEARCH_EVENT_NUMBERS=0
+export ZSH_FZF_HISTORY_SEARCH_DATES_IN_SEARCH=0
+export ZSH_FZF_HISTORY_SEARCH_REMOVE_DUPLICATES=1
+export ZSH_FZF_HISTORY_SEARCH_FZF_EXTRA_ARGS='--preview-window=hidden'
+
 case "$(uname -s)" in
      Darwin)
        bindkey "ç" fzf-cd-widget
