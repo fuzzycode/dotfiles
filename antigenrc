@@ -21,6 +21,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 
 antigen bundle lukechilds/zsh-nvm
 
+antigen bundle mollifier/cd-gitroot
 antigen bundle EthanLeisinger/zsh-git-scripts
 antigen bundle wookayin/fzf-fasd
 antigen bundle davidde/git

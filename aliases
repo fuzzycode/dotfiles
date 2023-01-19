@@ -27,6 +27,8 @@ alias fp=findProcess
 # copy the working directory path
 alias cpwd='pwd|tr -d "\n"|pbcopy'
 
+alias cdr='cd-gitroot'
+
 alias f='fzf '
 
 # Include custom aliases
