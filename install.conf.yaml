@@ -30,11 +30,4 @@
     ~/.config/starship.toml: starship.toml
     ~/.antigen: antigen
     ~/.antigenrc: antigenrc
-#
-- shell:
-    # Set zsh as default shell
-    - chsh -s /bin/zsh
-
-# Update the shell
-- shell:
-    - source ~/.zshrc
+    ~/.config/fish: fish
