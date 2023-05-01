@@ -12,7 +12,7 @@ set -U fish_greeting
 
 set -x RIPGREP_CONFIG_PATH ~/.ripgreprc
 set -x HOMEBREW_NO_ENV_HINTS 1
-
+set -x XDG_DATA_HOME ~/.local/share
 
 # Setup the interactive shell
 if status is-interactive
