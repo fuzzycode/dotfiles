@@ -20,6 +20,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     brew install enchant
     brew install fasd
     brew install fd
+    brew install fish
     brew install flake8
     brew install fzf
     brew install direnv
@@ -46,6 +47,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     brew install ripgrep
     brew install rust-analyzer
     brew install shellcheck
+    brew install starship
     brew install sphinx-doc
     brew install sqlite
     brew install terminal-notifier
