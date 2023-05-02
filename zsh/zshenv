@@ -1,12 +1,6 @@
 # Add git scripts to path
 export PATH="$HOME/.dotfiles/git/scripts":$PATH
 
-if [[ "$(uname -s)" == "Darwin" ]]; then
-    # Add brew bin directory to path
-    export PATH="/usr/local/bin/":$PATH
-    export PATH="/usr/local/sbin":$PATH
-fi
-
 # Disable homebrew hints
 export HOMEBREW_NO_ENV_HINTS=1
 
