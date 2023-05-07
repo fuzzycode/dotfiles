@@ -23,7 +23,7 @@ if status is-interactive
     starship init fish | source
 
     # Abbreviations
-    abbr --add la exa --long --all --git
+    abbr --add la exa --long --all --git --icons
     abbr --add ls exa
     abbr --add tree exa --tree
     abbr --add cdr cd-gitroot
@@ -33,6 +33,13 @@ if status is-interactive
     alias c clear
     alias gs 'git status'
     alias gd 'git diff'
+    alias gt 'git difftool'
+
+    # Special aliases when running fish from vterm
+    if test 'vterm' = "$INSIDE_EMACS"
+        alias dired vd
+    end
+
 
     # FZF config
     set fzf_history_opts --with-nth=4.. # Remove date/time display
