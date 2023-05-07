@@ -31,6 +31,7 @@ if status is-interactive
 
     # Aliases
     alias c clear
+    alias s "source $XDG_CONFIG_HOME/fish/config.fish"
     alias gs 'git status'
     alias gd 'git diff'
     alias gt 'git difftool'
