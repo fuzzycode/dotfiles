@@ -8,6 +8,9 @@ fish_add_path /opt/homebrew/bin/
 # Add my custom git scripts to path
 fish_add_path ~/.dotfiles/git/scripts
 
+# Add doom bin folder to path
+fish_add_path ~/.emacs.d/bin
+
 #clear greeting message
 set -U fish_greeting
 
@@ -44,7 +47,6 @@ if status is-interactive
 
     # FZF config
     set fzf_history_opts --with-nth=4.. # Remove date/time display
-
 end
 
 # Load local config if it exists
