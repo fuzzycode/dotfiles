@@ -26,9 +26,9 @@ if status is-interactive
     starship init fish | source
 
     # Abbreviations
-    abbr --add la exa --long --all --icons
-    abbr --add ls exa
-    abbr --add tree exa --tree
+    abbr --add la eza --long --all --icons
+    abbr --add ls eza
+    abbr --add tree eza --tree
     abbr --add cdr cd-gitroot
 
 
