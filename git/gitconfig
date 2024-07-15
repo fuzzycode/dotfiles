@@ -1,6 +1,11 @@
 [core]
   excludesfile = ~/.gitignore
 
+[merge]
+  conflictStyle = zdiff3
+  branchdesc = true
+  log = true
+
 [diff]
   tool = difftastic
 
