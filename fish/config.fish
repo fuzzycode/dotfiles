@@ -43,11 +43,10 @@ if status is-interactive
     if test 'vterm' = "$INSIDE_EMACS"
         alias dired vd
     end
-
-
-    # FZF config
-    set fzf_history_opts --with-nth=4.. # Remove date/time display
 end
+
+# Load fzf configuration
+source ~/.dotfiles/fish/fzf.fish
 
 # Load local config if it exists
 if test -e ~/.config.local.fish
