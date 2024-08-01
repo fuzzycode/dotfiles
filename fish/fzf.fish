@@ -7,16 +7,15 @@ set -x ZSH_FZF_HISTORY_SEARCH_DATES_IN_SEARCH 0
 set -x FZF_DEFAULT_OPTS "
 --bind '?:toggle-preview'
 --bind 'ctrl-a:select-all'
---bind 'ctrl-y:execute-silent(echo {2} | tr -d "\n" | pbcopy)+abort'
 "
 
 # Use fd to provide file and directory information
 function _fzf_compgen_path
-  fd --hidden --follow --exclude ".git" . "$1"
+  fd --hidden --follow --strip-cwd-prefix --exclude ".git" . "$1"
 end
 
 function _fzf_compgen_dir
-  fd --type d --hidden --follow --exclude ".git" . "$1"
+  fd --type d --hidden --follow --strip-cwd-prefix --exclude ".git" . "$1"
 end
 
 function frg -a query -d "Fuzzy search using FZF and Ripgrep"
@@ -25,7 +24,7 @@ function frg -a query -d "Fuzzy search using FZF and Ripgrep"
     set -q query[1]
     or set query ""
 
-    command fzf --ansi --disabled --query "$query" \
+    command fzf --no-multi --ansi --disabled --query "$query" \
         --bind "start:reload($RG_PREFIX {q})" \
         --bind "change:reload:sleep 0.1; $RG_PREFIX {q} || true" \
         --prompt '1. ripgrep> ' \
@@ -39,4 +38,6 @@ end
 
 if status is-interactive
     fzf --fish | source
+
+    alias fcd 'fzf-cd-widget'
 end
