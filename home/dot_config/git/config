@@ -1,0 +1,72 @@
+[core]
+  excludesfile = ~/.gitignore
+
+[merge]
+  conflictStyle = zdiff3
+  branchdesc = true
+  log = true
+
+[diff]
+  tool = difftastic
+
+[difftool]
+  prompt = false
+
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+  difftool = true
+
+[rebase]
+  autoStash = true
+
+[pull]
+  rebase = true
+
+[fetch]
+  prune = true
+
+[alias]
+  # Convenience aliases
+  co = checkout
+  st = status -sb
+  br = branch
+
+  # Reset
+  r = reset
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  rh = reset --hard
+  rh1 = reset HEAD^ --hard
+  rh2 = reset HEAD^^ --hard
+
+  # Submodules
+  su = submodule update --init --recursive
+  subup = "!git pull --recurse-submodules && git submodule update --recursive --remote --init"
+
+  # Diff a given revision
+  dr  = "!f() { git diff "$1"^.."$1"; }; f"
+
+  # Find a file
+  f = "!git ls-files | grep -i "
+
+  # Pretty log
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+  dft = difftool
+
+  # http://brettterpstra.com/2014/08/04/shell-tricks-one-git-alias-to-rule-them-all/
+  # Allow searching for and listing git aliases
+  finda = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
+  la = "!git finda"
+
+[commit]
+  template = ~/.commit-template
+
+# Allow local customizations in the .gitconfig.local file
+[include]
+  path = ~/.gitconfig.local
