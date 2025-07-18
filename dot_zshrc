@@ -1,0 +1,61 @@
+
+#nvm configuration
+export NVM_DIR="$HOME/.nvm"
+export NVM_COMPLETION=true
+export NVM_AUTO_USE=true
+
+if [[ -o interactive ]]; then
+    # Setup Antigen
+    source ~/.antigen/antigen.zsh
+    antigen init ~/.antigenrc
+
+    # Configure aliases
+    source ~/.aliases
+
+    # Setup starship prompt
+    eval "$(starship init zsh)"
+fi
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='emacsclient'
+else
+  export EDITOR='emacsclient'
+fi
+
+# ripgrep
+export RIPGREP_CONFIG_PATH=~/.ripgreprc
+
+# FZF settings
+export FZF_COMPLETION_TRIGGER='**'
+export FZF_DEFAULT_OPTS="
+--layout=reverse
+--cycle
+--info=inline
+--height=80%
+--multi
+--preview '([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'
+--color='hl:148,hl+:154,pointer:032,marker:010,bg+:237'
+--prompt='∼ ' --pointer='▶' --marker='✓'
+--bind '?:toggle-preview'
+--bind 'ctrl-a:select-all'
+--bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
+"
+
+# FZF History
+export ZSH_FZF_HISTORY_SEARCH_EVENT_NUMBERS=0
+export ZSH_FZF_HISTORY_SEARCH_DATES_IN_SEARCH=0
+export ZSH_FZF_HISTORY_SEARCH_REMOVE_DUPLICATES=1
+export ZSH_FZF_HISTORY_SEARCH_FZF_EXTRA_ARGS='--preview-window=hidden'
+
+case "$(uname -s)" in
+     Darwin)
+       bindkey "ç" fzf-cd-widget
+     ;;
+esac
+
+# Local config
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local

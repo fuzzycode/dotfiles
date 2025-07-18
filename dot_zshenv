@@ -1,0 +1,8 @@
+# Add git scripts to path
+export PATH="$HOME/.dotfiles/git/scripts":$PATH
+
+# Disable homebrew hints
+export HOMEBREW_NO_ENV_HINTS=1
+
+# Local config
+[[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
